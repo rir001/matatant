@@ -4,12 +4,12 @@ from time import sleep
 class Matatant(Serial):
     def __init__(self, port:int):
         '''
-        port: puerto serial para iniciar la coneccion -> "COM{port_number}"
+        port: puerto serial para iniciar la conexion -> "COM{port_number}"
         '''
         # idealmente hay que buscar como automatizar la busqueda del puerto pq es facil pero no practico
-        print('Estableciendo coneccion...')
+        print('Estableciendo conexion...')
         super().__init__(f'COM{port}', baudrate = 9600, timeout = 1)
-        print('Coneccion establecida!')
+        print('Conexion establecida!')
 
 
     def forward(self, steps:int, ):

@@ -3,7 +3,7 @@ from machine import Pin, UART, PWM
 uart = UART(0,9600)
 
 class Wheel:
-    def __init__(self, pin1:int, pin2:int, max:int):
+    def __init__(self, pin1: int, pin2: int, max: int):
         self.front = PWM(Pin(pin1))
         self.front.freq(1000)
 
